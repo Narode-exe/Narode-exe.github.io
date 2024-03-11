@@ -1,2 +1,1 @@
-# Personal portfolio - Siddhant Narode
-
+Personal portfolio - Siddhant Narode

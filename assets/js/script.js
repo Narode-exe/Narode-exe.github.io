@@ -1,7 +1,6 @@
 'use strict';
 
 
-
 // element toggle function
 const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
 
@@ -21,6 +20,39 @@ const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
 const modalContainer = document.querySelector("[data-modal-container]");
 const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
 const overlay = document.querySelector("[data-overlay]");
+
+// modal variable
+const modalImg = document.querySelector("[data-modal-img]");
+const modalTitle = document.querySelector("[data-modal-title]");
+const modalYear = document.querySelector("[data-modal-container] time");
+const modalText = document.querySelector("[data-modal-text]");
+const modalLink = document.querySelector("[data-modal-container] a");
+
+// modal toggle function
+const testimonialsModalFunc = function () {
+  modalContainer.classList.toggle("active");
+  overlay.classList.toggle("active");
+}
+
+// add click event to all modal items
+for (let i = 0; i < testimonialsItem.length; i++) {
+
+  testimonialsItem[i].addEventListener("click", function () {
+
+    modalImg.src = this.querySelector("[data-testimonials-avatar]").src;
+    modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
+    modalTitle.innerHTML = this.querySelector("[data-testimonials-title]").innerHTML;
+    modalText.innerHTML = this.querySelector("[data-testimonials-text]").innerHTML;
+
+    testimonialsModalFunc();
+
+  });
+
+}
+
+// add click event to modal close button
+modalCloseBtn.addEventListener("click", testimonialsModalFunc);
+overlay.addEventListener("click", testimonialsModalFunc);
 
 
 
@@ -49,11 +81,16 @@ const filterItems = document.querySelectorAll("[data-filter-item]");
 
 const filterFunc = function (selectedValue) {
 
+  console.log(selectValue, "@@");
+
+
   for (let i = 0; i < filterItems.length; i++) {
 
     if (selectedValue === "all") {
       filterItems[i].classList.add("active");
     } else if (selectedValue === filterItems[i].dataset.category) {
+      console.log("here "+ filterItems[i].dataset.category);
+
       filterItems[i].classList.add("active");
     } else {
       filterItems[i].classList.remove("active");
@@ -61,6 +98,29 @@ const filterFunc = function (selectedValue) {
 
   }
 
+}
+
+// add click event to all modal items
+for (let i = 0; i < filterItems.length; i++) {
+
+  filterItems[i].addEventListener("click", function () {
+
+    modalImg.src = this.querySelector("[data-project-img]").src;
+    modalImg.alt = this.querySelector("[data-project-img]").alt;
+    modalTitle.innerHTML = this.querySelector(".project-title").innerHTML;
+    modalYear.innerHTML = this.dataset.year;
+    modalText.innerHTML = '<p>' + this.dataset.summary + '</p>';
+    modalLink.href = this.dataset.link ? this.dataset.link : "#";
+    portfolioModalFunc();
+
+  });
+
+}
+
+// modal toggle function
+const portfolioModalFunc = function () {
+  modalContainer.classList.toggle("active");
+  overlay.classList.toggle("active");
 }
 
 // add event in all filter button items for large screen

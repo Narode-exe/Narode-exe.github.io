@@ -42,7 +42,7 @@
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="./assets/images/parth_image2.png" alt="Siddhant Narode" width="80">
+          <img src="./assets/images/Siddhant.png" alt="Siddhant Narode" width="70">
         </figure>
 
         <div class="info-content">
@@ -68,17 +68,18 @@
           <li class="contact-item">
 
             <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
+              <ion-icon name="mail-outline"role="img" class="md hydrated" aria-label="mail outline"></ion-icon>
             </div>
 
             <div class="contact-info">
               <p class="contact-title">Email</p>
 
-              <a href="mailto:narode.s@northeastern.edu" class="contact-link">Get in touch</a>
+              <a href="mailto:narode.s@northeastern.edu" class="contact-link">
+              narode.s@northeastern.edu</a>
             </div>
 
           </li>
-
+          
          <li class="contact-item">
 
             <div class="icon-box">
@@ -88,7 +89,21 @@
             <div class="contact-info">
               <p class="contact-title">Linkedin</p>
 
-              <a href="https://www.linkedin.com/in/siddhant-narode/" class="contact-link">Let's Connect</a>
+              <a href="https://www.linkedin.com/in/siddhant-narode/" class="contact-link">linkedin.com/in/siddhant-narode/</a>
+            </div>
+
+          </li>         
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline" role="img" class="md hydrated" aria-label="phone portrait outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+16179466043" class="contact-link">+1 (617) 946-6043</a>
             </div>
 
           </li>
@@ -102,7 +117,7 @@
             <div class="contact-info">
               <p class="contact-title">Location</p>
 
-              <address>Boston, USA</address>
+              <address>Boston, Massachusetts, USA</address>
             </div>
 
           </li>
@@ -156,7 +171,7 @@
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
+            <button class="navbar-link  active" data-nav-link>Home</button>
           </li>
 
           <li class="navbar-item">
@@ -181,16 +196,17 @@
   - #ABOUT
 -->
 
-<article class="about  active" data-page="about">
+<article class="home  active" data-page="home">
 
   <header>
     <h2 class="h2 article-title">About me</h2>
   </header>
   <section class="about-text">
     <p>
-      I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
-      I enjoy
-      turning complex problems into simple, beautiful and intuitive designs.
+      I'm a graduate student at Northeastern University pursuing a Master's degree in Computer Science. My research interests are in Machine Learning, Artifical Intelligence and Augmented/Virtual Reality.
+    </p>
+    <p> 
+      I enjoy rapid prototyping and complex problem solving. In the past I have developed web, mobile and desktop applications as well as games for PC and VR headsets. I've worked as a XR Software developer at fast paced start-ups building projects end-to-end from requirements gathering to testing and release which has helped me gain experience with the SDLC. To learn more about my software engineering experience check out my resume!
     </p>
   </section>
 
@@ -203,9 +219,8 @@
       -->
 
       
-
         <header>
-          <h2 class="h2 article-title">Portfolio</h2>
+          <h2 class="h2 article-title">My Work</h2>
         </header>
 
         <section class="projects">
@@ -213,31 +228,32 @@
           <ul class="filter-list">
 
             <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
+              <button class="active" data-filter-btn="">All</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>augmented reality</button>
+              <button data-filter-btn="">Professional</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Applications</button>
+              <button data-filter-btn="">Personal</button>
             </li>
 
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
+
+            <!-- <li class="filter-item">
+              <button data-filter-btn>Blockchain</button>
+            </li> -->
 
           </ul>
 
           <div class="filter-select-box">
 
-            <button class="filter-select" data-select>
+            <button class="filter-select" data-select="">
 
-              <div class="select-value" data-selecct-value>Select category</div>
+              <div class="select-value" data-selecct-value="">Select category</div>
 
               <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
+                <ion-icon name="chevron-down" role="img" class="md hydrated" aria-label="chevron down"></ion-icon>
               </div>
 
             </button>
@@ -245,20 +261,21 @@
             <ul class="select-list">
 
               <li class="select-item">
-                <button data-select-item>All</button>
+                <button data-select-item="">All</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>augmented reality</button>
+                <button data-select-item="">Professional</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>Applications</button>
+                <button data-select-item="">Personal</button>
               </li>
 
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
+
+              <!-- <li class="select-item">
+                <button data-select-item>Blockchain</button>
+              </li> -->
 
             </ul>
 
@@ -266,151 +283,127 @@
 
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="augmented reality">
+            <li class="project-item  active" data-filter-item="" data-category="professional" data-year="2022" data-link="https://docs.tesseract.in/develop" data-summary="Developed a cross-platform software developer kit (JMR-SDk) at Jio Tesseract for Mixed Reality Headset using 
+            Unity 3D, c#. Built functionality for developers to set up intuitive XR interaction, rendering & developer console through APIs.">
               <a href="#">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                    <ion-icon name="eye-outline" role="img" class="md hydrated" aria-label="eye outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/mclaren.png" alt="AR Car Customization" loading="lazy">
+                  <img src="./assets/images/pro1.png" alt="uniq" loading="lazy" data-project-img="">
                 </figure>
 
-                <h3 class="project-title">AR Car Customization</h3>
+                <h3 class="project-title">Mixed Reality Headset - Software Development Kit</h3>
 
-                <p class="project-category">augmented reality</p>
+                <p class="project-category">Professional</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="augmented reality">
+            <li class="project-item  active" data-filter-item="" data-category="professional" data-year="2023" data-link="https://play.google.com/store/apps/details?id=com.jiotesseract.mr.jxr&hl=en_US&gl=US&pli=1" data-summary="Collaborated cross-functionally with techical artists to develop Jio Immerse XR application that allows user 
+            to experience live entertainment in Virtual Reality. Built functionality like system settings and user login using C#. 
+            Executed the project as product owner using the agile SDLC from requirements gathering 
+            to documentation and testing.">
               <a href="#">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                    <ion-icon name="eye-outline" role="img" class="md hydrated" aria-label="eye outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/watchtry.png" alt="AR Watch Try-On" loading="lazy">
+                  <img src="./assets/images/pro2.png" alt="paint-party" loading="lazy" data-project-img="">
                 </figure>
 
-                <h3 class="project-title">AR Watch Try-On</h3>
+                <h3 class="project-title">JioImmerse - XR Entertainment Platform</h3>
 
-                <p class="project-category">augmented reality</p>
+                <p class="project-category">Professional</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="AR/VR">
+            <li class="project-item  active" data-filter-item="" data-category="professional" data-year="2023" data-link="https://www.jio.com/dive" data-summary="Engineered functionalities for capacitive interaction, barrel distortion rendering, digital IPD using
+            linear algebra, shader programming in Unity 3D and c#. Created suitable environments and metrics in VR to enhance live 360 VR sport streaming. 
+             ">
               <a href="#">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                    <ion-icon name="eye-outline" role="img" class="md hydrated" aria-label="eye outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                  <img src="./assets/images/pro3.png" alt="orizon" loading="lazy" data-project-img="">
                 </figure>
 
-                <h3 class="project-title">Fundo</h3>
+                <h3 class="project-title">VR 360 Sports Streaming</h3>
 
-                <p class="project-category">AR/VR</p>
+                <p class="project-category">professional</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
+            <li class="project-item  active" data-filter-item="" data-category="personal" data-year="2021" data-link="#" data-summary="Prototyped a hactics response wearable for cross-platform XR devices that uses LRA's, computer vision, and landmark based multinodal hand tracking system to 
+            provide realistic touch and texture feel of 3D environment. Research work was published in Indian Patent Journal in 2021. The patent was granted in 2022.">
               <a href="#">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                    <ion-icon name="eye-outline" role="img" class="md hydrated" aria-label="eye outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/parth_image.png" alt="brawlhalla" loading="lazy">
+                  <img src="./assets/images/per1.png" alt="food-talk" loading="lazy" data-project-img="">
                 </figure>
 
-                <h3 class="project-title">Brawlhalla</h3>
+                <h3 class="project-title">Haptic wearable (patented) </h3>
 
-                <p class="project-category">Applications</p>
+                <p class="project-category">Personal</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
+            <li class="project-item  active" data-filter-item="" data-category="personal" data-year="2023" data-link="#" data-summary="Created a location based augmented reality treasure hunt 
+            using ARCore's geospatial anchors, GPS and VPS systesm for Android OS. Built a functionalities to keep track of user score, gameplay mechanics and integrated Google Play Services.">
               <a href="#">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                    <ion-icon name="eye-outline" role="img" class="md hydrated" aria-label="eye outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                  <img src="./assets/images/per2.png" alt="sketch4me" loading="lazy" data-project-img="">
                 </figure>
 
-                <h3 class="project-title">DSM.</h3>
+                <h3 class="project-title">Location based AR Tresure hunt </h3>
 
-                <p class="project-category">Web design</p>
+                <p class="project-category">Personal</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
+            <li class="project-item  active" data-filter-item="" data-category="personal" data-year="2021" data-link="#" data-summary="Built a mixed reality application for spatial positioning of 3D renders of tumour 
+            to assist in surgical tracking for medical professionals. A 3D mesh of CT-Scan was generated realtime using ray marching algorithm and users could interact with it using hand tracking gesture in Microsoft Hololens 2.
+            ">
               <a href="#">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                    <ion-icon name="eye-outline" role="img" class="md hydrated" aria-label="eye outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                  <img src="./assets/images/per3.png" alt="hyper-hire" loading="lazy" data-project-img="">
                 </figure>
 
-                <h3 class="project-title">MetaSpark</h3>
+                <h3 class="project-title">Surgical tracking using Mixed Reality</h3>
 
-                <p class="project-category">Web design</p>
+                <p class="project-category">personal</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
 
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
+            <!-- <li class="project-item  active" data-filter-item data-category="web development">
               <a href="#">
 
                 <figure class="project-img">
@@ -426,9 +419,49 @@
                 <p class="project-category">Web development</p>
 
               </a>
-            </li>
+            </li> -->
 
           </ul>
+
+          <div class="modal-container" data-modal-container="">
+
+            <div class="overlay" data-overlay=""></div>
+  
+            <section class="testimonials-modal">
+  
+              <button class="modal-close-btn" data-modal-close-btn="">
+                <ion-icon name="close-outline" role="img" class="md hydrated" aria-label="close outline"></ion-icon>
+              </button>
+  
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img="">
+                </figure>
+              </div>
+  
+              <div class="modal-content">
+  
+                <h4 class="h3 modal-title" data-modal-title="">Daniel lewis</h4>
+  
+                <time>14 June, 2020</time>
+  
+                <div data-modal-text="">
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+                <a class="modal-link" href="#" target="_blank">GitHub Link</a>
+  
+              </div>
+  
+            </section>
+  
+          </div>
 
         </section>
 
@@ -464,7 +497,7 @@
               <span>01/2024 — 09/2025</span>
 
               <p class="timeline-text">
-                Algorithm, Database Management
+                <b>Relevent Cources:</b> Algorithm, Database Management, Mobile Application Development
               </p>
 
             </li>
@@ -476,8 +509,7 @@
               <span>2017 — 2021</span>
 
               <p class="timeline-text">
-              Operating System, Machine Learning, Big Data Analysis, Image Processing and Pattern Recognition, Artifical Intelligence
-              </p>
+                <b>Relevent Cources:</b> Artificial Intelligence, Machine Learning, Computer Vision, Pattern Recognition, Object-Oriented Programming, Natural Language Processing, Internet of Things              </p>
 
             </li>
 
@@ -506,16 +538,15 @@
               <span>09/2012 — 08/2023</span>
               
               <p style="margin-bottom: 7px;" class="timeline-text">
-                • Developed cross-platform Jio Mixed Reality SDK (JMR-SDK) framework, fostering a thriving developer community with 150+ enterprise & consumer applications for Jio Mixed Reality XR Goggle using Unity 3D and C#.
-              </p>
+                • Led the development of Mixed Reality SDK (JMR-SDK) framework, fostering a thriving developer community with 150+ enterprise & consumer applications for Jio Mixed Reality XR Goggle using Unity 3D and C#.
                <p style="margin-bottom: 7px;" class="timeline-text">
-                • Engineered a interaction system using C# scripting and 3D math, providing users with an interactive Virtual reality experience for the JioImmerse application.             
+                • Established design patterns to develop input module, interaction system, and multi-threaded rendering system to maintain modularized code using dynamic linked libraries, achieved 20% efficiency in memory usage.
                </p>
               <p style="margin-bottom: 7px;" class="timeline-text">
-                • Programmed API wrappers in C# scripts to integrate Android Java Class, Android Java Proxy, & native SDK services.
+                • Collaborated with over three cross-functional engineering, product and UX teams to orchestrate live streaming of IPL 2023 sporting event in JioImmerse VR application.
               </p>
               <p class="timeline-text">
-                • Directed continuous sprint execution cycles as the release engineer for SDK team, achieved a 15% reduction in release time by automating build releases with Unity Editor Scripts and the BigBucket build-pipeline.              
+                • Programmed optimized code to implement API wrappers in SDK system licenses, verification of authenticity through android services.              </p>
               </p>
               
 
@@ -530,15 +561,12 @@
               <p style="margin-bottom: 7px;" class="timeline-text">
                 • Designed and implemented game user interfaces and menus for training and simulation VR applications, resulting in a 20% increase in user engagement and a more intuitive user experience using Unreal Engine 4, Unreal Blueprint programming and c++.           
               </p>
-               <p style="margin-bottom: 7px;" class="timeline-text">
-                • Developed and maintained game assets such as 3D models, textures, and animations, resulting in a 15% improvement in overall aesthetics for virtual reality and augmented reality applications.
-               </p>
               <p style="margin-bottom: 7px;" class="timeline-text">
                 • Provided in-depth instructions on advanced AR concepts such as object detection, image tracking, face tracking, SLAM, object reconstruction and pose estimation.              
               </p>
               <p class="timeline-text">
-                • Engineered desktop streaming applications to transfer 3+ XR training experiences unsupported XR devices using Pixel Streaming, to increase reach of application by 25%.             
-              </p>
+                • Directed continuous sprint execution cycles as the release engineer for SDK team, achieved a 15% reduction in release time by
+                automating build releases with Unity Editor Scripts and the BigBucket build-pipeline.              </p>
 
             </li>
 
@@ -549,12 +577,12 @@
               <span>02/2021 — 06/2021</span>
 
               <p style="margin-bottom: 7px;" class="timeline-text">
-                 • Engineered a data analytical dashboard to analyze user experience matrix such as Heatmap, Gaze targets and Daily Active Users using Game Analytic API, Google Analytics & Unreal Engine to boost application review by 25%.
+                • Engineered a data analytical dashboard to analyze user experience matrix such as Heatmap, Gaze targets and Daily Active Users using Game Analytic API, Google Analytics & Unreal Engine to boost application review by 25%.
                 </p>
                
               <p class="timeline-text">
-                 • Engineered a data analytical dashboard to analyze user experience matrix such as Heatmap, Gaze targets and Daily Active Users using Game Analytic API, Google Analytics & Unreal Engine to boost application review by 25%.              
-              </p>
+                • Ported VR/AR applications into immersive 3D Web Applications to increase user engagement by 60% in learning management
+                systems using three.js and Verge3D.              </p>
 
             </li>
 
@@ -566,59 +594,77 @@
 
           <h3 class="h3 skills-title">My skills</h3>
 
+
+
           <ul class="skills-list content-card">
 
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">Web design</h5>
-                <data value="80">80%</data>
+                <h5 class="h5">Languages:    </h5>
+                <data value="80">C#, C++, Python, Java, JavaScript, Bash, SQL, Kotlin, Powershell, Golang, Typescript, Swift</data>
               </div>
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
 
             </li>
 
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">Graphic design</h5>
-                <data value="70">70%</data>
+                <h5 class="h5">XR Tools:    </h5>
+                <data value="80">Unity3D, Unreal Engine, Vuforia, ARKit, ARCore, OculusSDK, MRTK, WebGL, XR Toolkit, OpenXR</data>
               </div>
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
 
             </li>
 
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">Branding</h5>
-                <data value="90">90%</data>
+                <h5 class="h5">XR Hardware:    </h5>
+                <data value="80">Meta Quest 2, Microsoft Hololens 2, MagicLeap, HTC Vive</data>
               </div>
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
+
+            </li>
+
+
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Libraries/Frameworks:    </h5>
+                <data value="80">Three.js, Verge3D, Node.js, Babylon.js, HTML, CSS, Bootstarp, React, OpenCV</data>
               </div>
+
 
             </li>
 
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">WordPress</h5>
-                <data value="50">50%</data>
+                <h5 class="h5">Tools and Platforms:   </h5>
+                <data value="80">XCode, Google Cloud Platform, AWS, Microsoft Azure, .NET, Git, Docker, VS Code</data>
               </div>
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
 
             </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Hands-on skills:   </h5>
+                <data value="80">Agile, Scrum, Git, SDLC, BigBucket, Jira, SourceTree, OOD</data>
+              </div>
+
+
+            </li>
+
+
+
+            </li>
+
+     
 
           </ul>
 
@@ -634,7 +680,7 @@
         - #PORTFOLIO
       -->
 
-      <article class="portfolio" data-page="portfolio">
+      <!-- <article class="portfolio" data-page="portfolio">
 
         <header>
           <h2 class="h2 article-title">Portfolio</h2>
@@ -760,7 +806,7 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/parth_image.png" alt="brawlhalla" loading="lazy">
+                  <img src="./assets/images/siddhant.jpg" alt="brawlhalla" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">Brawlhalla</h3>
@@ -864,7 +910,7 @@
 
         </section>
 
-      </article>
+      </article> -->
 
 
 
